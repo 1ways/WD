@@ -9,6 +9,9 @@
     width: 33.33%;
     justify-content: center;
   }
+  .skills__content {
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -22,6 +25,20 @@
   }
   .menu__item {
     margin-left: 21px;
+  }
+  .skills__img {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  .skills__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills__content {
+    margin-right: 0;
+  }
+  .skills {
+    padding: 100px 0 100px 0;
   }
 }
 
@@ -100,16 +117,16 @@
   .projects__item {
     width: 50%;
   }
-  .projects__item:not(:last-child) {
-    margin-bottom: 20px;
-  }
   .projects__content {
     width: 30%;
     display: flex;
     align-items: center;
   }
-  .projects__name{
+  .projects__name {
     margin-right: 10px;
+  }
+  .work__video {
+    height: 400px;
   }
 }
 
@@ -125,11 +142,17 @@
   .projects__item {
     width: 100%;
   }
+  .projects__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 320px) {
   .header__title {
     font-size: 30px;
     line-height: 40px;
+  }
+  .work__video {
+    height: 200px;
   }
 }
