@@ -12,6 +12,13 @@
   .skills__content {
     margin-right: 30px;
   }
+  .company__inner {
+    flex-wrap: wrap;
+  }
+  .company__item {
+    width: 50%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 900px) {
@@ -91,7 +98,7 @@
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.3s;
     background: #34547a;
   }
   .menu__icon::before,
@@ -107,6 +114,17 @@
   .menu__icon span {
     top: 50%;
     transform: scale(1) translate(0, -50%);
+  }
+  .menu__icon.active span {
+    transform: scale(0) translate(0, -50%);
+  }
+  .menu__icon.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+  .menu__icon.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
   }
 }
 
@@ -128,6 +146,34 @@
   .work__video {
     height: 400px;
   }
+  .company__item {
+    width: 100%;
+  }
+  .company__inner {
+    padding: 72px 0 72px 0;
+  }
+  .contact__row {
+    display: block;
+  }
+  .contact__input:first-child {
+    margin-bottom: 20px;
+  }
+  .contact__input:last-child {
+    margin-left: 0;
+  }
+  .contact__input {
+    width: 100%;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .projects__img {
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -144,6 +190,9 @@
   }
   .projects__item:not(:last-child) {
     margin-bottom: 20px;
+  }
+  .title {
+    margin-bottom: 25px;
   }
 }
 
