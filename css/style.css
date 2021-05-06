@@ -12,6 +12,10 @@ body {
   color: #727272;
 }
 
+body.lock{
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -36,6 +40,10 @@ a {
   margin-bottom: 140px;
 }
 
+.menu__icon{
+  display: none;
+}
+
 .menu__list {
   display: flex;
 }
@@ -58,6 +66,7 @@ a {
 .header__inner {
   display: flex;
   padding-bottom: 146px;
+  justify-content: space-between;
 }
 
 .header__img {
@@ -65,7 +74,7 @@ a {
 }
 
 .header__content {
-  margin-left: 154px;
+  max-width: 540px;
 }
 
 .header__title {
@@ -102,7 +111,7 @@ a {
 }
 
 .about__text {
-  width: 540px;
+  max-width: 540px;
   text-align: center;
 }
 
@@ -110,15 +119,12 @@ a {
   background: #34547a;
 }
 
-.projects__inner {
-  padding: 100px 0;
-}
-
 .projects__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  min-height: 250px;
 }
 
 .projects__item {
