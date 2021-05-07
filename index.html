@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header__selection">
       <div class="container">
         <div class="header__top">
           <img class="header__logo" src="images/logo.svg" />
@@ -27,19 +27,29 @@
             <nav class="menu__body">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link" href="#">ГЛАВНАЯ</a>
+                  <a data-goto=".header__selection" class="menu__link" href="#"
+                    >ГЛАВНАЯ</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">ОБ АВТОРЕ</a>
+                  <a data-goto=".about__selection" class="menu__link" href="#"
+                    >ОБ АВТОРЕ</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">РАБОТЫ</a>
+                  <a data-goto=".gallery__selection" class="menu__link" href="#"
+                    >РАБОТЫ</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">ПРОЦЕСС</a>
+                  <a data-goto=".work__selection" class="menu__link" href="#"
+                    >ПРОЦЕСС</a
+                  >
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">КОНТАКТЫ</a>
+                  <a data-goto=".contact__selection" class="menu__link" href="#"
+                    >КОНТАКТЫ</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -59,7 +69,7 @@
         </div>
       </div>
     </header>
-    <section class="about">
+    <section class="about about__selection">
       <div class="container">
         <div class="about__inner">
           <h3 class="title">Обо мне</h3>
@@ -154,7 +164,7 @@
         </div>
       </div>
     </section>
-    <section class="work">
+    <section class="work work__selection">
       <div class="container">
         <div class="work__inner">
           <h2 class="title">Как я работаю</h2>
@@ -178,7 +188,7 @@
         </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery gallery__selection">
       <div class="gallery__inner">
         <div class="gallery__item">
           <img class="gallery__img" src="images/gallery-img-1.jpg" />
@@ -187,7 +197,7 @@
           </div>
         </div>
         <div class="gallery__item">
-          <img class="gallery__img" src="images/gallery-img-1.jpg" />
+          <img class="gallery__img" src="images/gallery-img-2.jpg" />
           <div class="hover">
             <img class="hover__img" src="images/eye.svg" />
           </div>
@@ -199,7 +209,13 @@
           </div>
         </div>
         <div class="gallery__item">
-          <img class="gallery__img" src="images/gallery-img-1.jpg" />
+          <img class="gallery__img" src="images/gallery-img-2.jpg" />
+          <div class="hover">
+            <img class="hover__img" src="images/eye.svg" />
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__img" src="images/gallery-img-2.jpg" />
           <div class="hover">
             <img class="hover__img" src="images/eye.svg" />
           </div>
@@ -211,13 +227,7 @@
           </div>
         </div>
         <div class="gallery__item">
-          <img class="gallery__img" src="images/gallery-img-1.jpg" />
-          <div class="hover">
-            <img class="hover__img" src="images/eye.svg" />
-          </div>
-        </div>
-        <div class="gallery__item">
-          <img class="gallery__img" src="images/gallery-img-1.jpg" />
+          <img class="gallery__img" src="images/gallery-img-2.jpg" />
           <div class="hover">
             <img class="hover__img" src="images/eye.svg" />
           </div>
@@ -248,7 +258,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact contact__selection">
       <div class="container">
         <div class="contact__inner">
           <h2 class="title">Хотите веб-сайт?</h2>

@@ -215,12 +215,13 @@ a {
 }
 
 .gallery__img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
 
 .hover {
-  display: none;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -232,13 +233,14 @@ a {
       rgba(52, 84, 122, 0.8)
     ),
     url(photo-1454165804606-c3d57bc86b40.jpg);
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
 }
 
 .gallery__item:hover .hover {
-  display: flex;
+  opacity: 1;
 }
 
 .company__inner {

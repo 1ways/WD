@@ -19,6 +19,9 @@
     width: 50%;
     text-align: center;
   }
+  .gallery__item {
+    width: 50%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -174,6 +177,9 @@
   .projects__img {
     margin-right: 5px;
   }
+  .gallery__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 430px) {
@@ -203,5 +209,11 @@
   }
   .work__video {
     height: 200px;
+  }
+  .header__top {
+    padding-top: 20px;
+  }
+  .menu__body{
+    top: 80px;
   }
 }
